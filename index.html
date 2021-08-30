@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gulp start</title>
+  <link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container">
+    <nav class="header__nav d-flex jc-sb">
+      <a class="logo" href="#">
+        <img src="images/logo.svg" alt="logo of the webpage" width="65" height="15">
+      </a>
+      <input class="menu-btn" type="checkbox" id="menu-btn">
+      <label class="menu-icon" for="menu-btn">
+        <span class="navicon"></span>
+      </label>
+      <ul class="menu d-flex">
+        <li class="menu__item">
+          <a href="index.html" class="menu__link">Home</a>
+        </li>
+        <li class="menu__item">
+          <a href="shop.html" class="menu__link">Shop</a>
+        </li>
+        <li class="menu__item">
+          <a href="about.html" class="menu__link">About</a>
+        </li>
+        <li class="menu__item">
+          <a href="contacts.html" class="menu__link">Contacts</a>
+        </li>
+        <li class="menu__item">
+          <a href="journal-page.html" class="menu__link">Journal</a>
+        </li>
+      </ul>
+      <form class="nav-lang">
+
+        <label class="nav-lang__label" for="lang-en">
+          <input class="nav-lang__radio" name="language" type="radio" id="lang-en" checked>
+          <span>en</span>
+        </label>
+        <label class="nav-lang__label" for="lang-ru">
+          <input class="nav-lang__radio" name="language" type="radio" id="lang-ru">
+          <span>ru</span>
+        </label>
+
+      </form>
+    </nav>
+  </div>
+
+  <div class="header__bottom">
+    <div class="container">
+
+      <div class="header__inner d-flex jc-sb ai-c fw-w">
+        <nav class="dropdown-menu js_drop" id="my-menu">
+          Shop by Category
+          <ul class="dropdown-menu__list dropdown">
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__group" href="#">Accesories</a>
+              <ul class="dropdown-menu__submenu">
+                <li class="dropdown-menu__categories">
+                  <a class="dropdown-menu__heading" href="#">Phones</a>
+                  <ul class="dropdown-menu__sublist">
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 1</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 2</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 3</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 4</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 5</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 6</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 7</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-menu__categories">
+                  <a class="dropdown-menu__heading" href="#">Computers</a>
+                  <ul class="dropdown-menu__sublist">
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 1</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 2</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 3</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 4</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 5</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 6</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 7</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-menu__categories">
+                  <a class="dropdown-menu__heading" href="#">Smart watches</a>
+                  <ul class="dropdown-menu__sublist">
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 1</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 2</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 3</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 4</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 5</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 6</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 7</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown-menu__categories">
+                  <a class="dropdown-menu__heading" href="#">Cameras</a>
+                  <ul class="dropdown-menu__sublist">
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 1</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 2</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 3</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 4</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 5</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 6</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 7</a></li>
+                  </ul>
+                </li>
+
+              </ul>
+            </li>
+            <li class="dropdown-menu__item">
+              <a href="#" class="dropdown-menu__group">Furniture</a>
+              <ul class="dropdown-menu__submenu">
+                <li class="dropdown-menu__categories">
+                  <a class="dropdown-menu__heading" href="#">Phones</a>
+                  <ul class="dropdown-menu__sublist">
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 1</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 2</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 3</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 4</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 5</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 6</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 7</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-menu__categories">
+                  <a class="dropdown-menu__heading" href="#">Computers</a>
+                  <ul class="dropdown-menu__sublist">
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 1</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 2</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 3</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 4</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 5</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 6</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 7</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-menu__categories">
+                  <a class="dropdown-menu__heading" href="#">Smart watches</a>
+                  <ul class="dropdown-menu__sublist">
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 1</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 2</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 3</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 4</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 5</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 6</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 7</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown-menu__categories">
+                  <a class="dropdown-menu__heading" href="#">Cameras</a>
+                  <ul class="dropdown-menu__sublist">
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 1</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 2</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 3</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 4</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 5</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 6</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 7</a></li>
+                  </ul>
+                </li>
+
+              </ul>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__group" href="#">Electronics</a>
+              <ul class="dropdown-menu__submenu">
+                <li class="dropdown-menu__categories">
+                  <a class="dropdown-menu__heading" href="#">Phones</a>
+                  <ul class="dropdown-menu__sublist">
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 1</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 2</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 3</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 4</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 5</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 6</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 7</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-menu__categories">
+                  <a class="dropdown-menu__heading" href="#">Computers</a>
+                  <ul class="dropdown-menu__sublist">
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 1</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 2</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 3</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 4</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 5</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 6</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 7</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-menu__categories">
+                  <a class="dropdown-menu__heading" href="#">Smart watches</a>
+                  <ul class="dropdown-menu__sublist">
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 1</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 2</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 3</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 4</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 5</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 6</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 7</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown-menu__categories">
+                  <a class="dropdown-menu__heading" href="#">Cameras</a>
+                  <ul class="dropdown-menu__sublist">
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 1</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 2</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 3</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 4</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 5</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 6</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 7</a></li>
+                  </ul>
+                </li>
+
+              </ul>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__group" href="#">Clothes</a>
+              <ul class="dropdown-menu__submenu">
+                <li class="dropdown-menu__categories">
+                  <a class="dropdown-menu__heading" href="#">Phones</a>
+                  <ul class="dropdown-menu__sublist">
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 1</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 2</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 3</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 4</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 5</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 6</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 7</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-menu__categories">
+                  <a class="dropdown-menu__heading" href="#">Computers</a>
+                  <ul class="dropdown-menu__sublist">
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 1</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 2</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 3</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 4</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 5</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 6</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 7</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-menu__categories">
+                  <a class="dropdown-menu__heading" href="#">Smart watches</a>
+                  <ul class="dropdown-menu__sublist">
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 1</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 2</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 3</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 4</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 5</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 6</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 7</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown-menu__categories">
+                  <a class="dropdown-menu__heading" href="#">Cameras</a>
+                  <ul class="dropdown-menu__sublist">
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 1</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 2</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 3</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 4</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 5</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 6</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 7</a></li>
+                  </ul>
+                </li>
+
+              </ul>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__group" href="#">Bags</a>
+              <ul class="dropdown-menu__submenu">
+                <li class="dropdown-menu__categories">
+                  <a class="dropdown-menu__heading" href="#">Phones</a>
+                  <ul class="dropdown-menu__sublist">
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 1</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 2</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 3</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 4</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 5</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 6</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 7</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-menu__categories">
+                  <a class="dropdown-menu__heading" href="#">Computers</a>
+                  <ul class="dropdown-menu__sublist">
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 1</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 2</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 3</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 4</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 5</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 6</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 7</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-menu__categories">
+                  <a class="dropdown-menu__heading" href="#">Smart watches</a>
+                  <ul class="dropdown-menu__sublist">
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 1</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 2</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 3</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 4</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 5</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 6</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 7</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown-menu__categories">
+                  <a class="dropdown-menu__heading" href="#">Cameras</a>
+                  <ul class="dropdown-menu__sublist">
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 1</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 2</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 3</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 4</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 5</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 6</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 7</a></li>
+                  </ul>
+                </li>
+
+              </ul>
+            </li>
+            <li class="dropdown-menu__item">
+              <a class="dropdown-menu__group" href="#">Home appliances</a>
+              <ul class="dropdown-menu__submenu">
+                <li class="dropdown-menu__categories">
+                  <a class="dropdown-menu__heading" href="#">Phones</a>
+                  <ul class="dropdown-menu__sublist">
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 1</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 2</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 3</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 4</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 5</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 6</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Phone 7</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-menu__categories">
+                  <a class="dropdown-menu__heading" href="#">Computers</a>
+                  <ul class="dropdown-menu__sublist">
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 1</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 2</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 3</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 4</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 5</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 6</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Computer 7</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-menu__categories">
+                  <a class="dropdown-menu__heading" href="#">Smart watches</a>
+                  <ul class="dropdown-menu__sublist">
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 1</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 2</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 3</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 4</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 5</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 6</a>
+                    </li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Smart watches 7</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown-menu__categories">
+                  <a class="dropdown-menu__heading" href="#">Cameras</a>
+                  <ul class="dropdown-menu__sublist">
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 1</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 2</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 3</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 4</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 5</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 6</a></li>
+                    <li class="dropdown-menu__subitem"><a class="dropdown-menu__link" href="#">Camera 7</a></li>
+                  </ul>
+                </li>
+
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <form class="search @@small-form @@big-form @@error d-flex jc-sb ai-c">
+  <label class="search__label">
+    <span class="sr-only">Search input field</span>
+    <input class="search__input @@small-input @@big-input" type="search" placeholder="Search Products">
+  </label>
+  <button class="search__btn" type="submit">
+    <svg class="search__icon">
+      <use xlink:href="sprite.svg#search"></use>
+    </svg>
+    <span class="sr-only">Search button</span>
+  </button>
+</form>
+
+        <ul class="header__user-cart d-flex jc-sb">
+          <li class="user js_drop">
+            <ul class="user__list dropdown">
+              <li class="user__item">
+                <a class="user__link btn btn--white" href="#">My&nbsp;Account</a>
+              </li>
+              <li class="user__item">
+                <a class="user__link btn btn--white" href="#">Log Out</a>
+              </li>
+            </ul>
+          </li>
+          <li class="cart js_drop">
+            <div class="cart__inner dropdown">
+              <div class="cart__top d-flex">
+                <div class="cart__photo">
+                  <img class="cart__img" width="80" height="80" src="images/content/black-smart-w.jpg"
+                    alt="Black Smart Watch">
+                </div>
+                <div class="cart__desc">
+                  <p class="cart__title">Black Smart Watch</p>
+                  <p class="cart__price"> <span>$</span>44.00</p>
+                </div>
+              </div>
+              <div class="cart__top d-flex">
+                <div class="cart__photo">
+                  <img class="cart__img" width="80" height="80" src="images/content/black-smart-w.jpg"
+                    alt="Black Smart Watch">
+                </div>
+                <div class="cart__desc">
+                  <p class="cart__title">Black Smart Watch</p>
+                  <p class="cart__price"><span>$</span>44.00</p>
+                </div>
+              </div>
+              <div class="cart__top d-flex">
+                <div class="cart__photo">
+                  <img class="cart__img" width="80" height="80" src="images/content/black-smart-w.jpg"
+                    alt="Black Smart Watch">
+                </div>
+                <div class="cart__desc">
+                  <p class="cart__title">Black Smart Watch</p>
+                  <p class="cart__price"><span>$</span>44.00</p>
+                </div>
+              </div>
+
+
+
+
+              <div class="cart__bottom">
+                <p class="cart__subtotal">Subtotal: <span>$</span>44.00</p>
+                <div class="cart__buttons d-flex jc-sb">
+                  <a class="btn btn--white btn--cart" href="#">View Cart</a>
+                  <a class="btn btn--white btn--cart" href="#">Checkout</a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+</header>
+<main class="main">
+
+  <section class="intro">
+  <div class="intro__slider">
+    <ul class="intro__list">
+
+      <li class="intro__item" style="background-image: url(images/content/1.jpg);">
+        <div class="container">
+          <div class="intro__content">
+            <div class="title intro__title">
+              <p>Final Offer</p>
+            </div>
+            <div class="intro__text">
+              <p>Up to <span>50%</span> sale for all furniture items!</p>
+            </div>
+            <a class="btn btn--white" href="#">Shop Now</a>
+          </div>
+
+        </div>
+      </li>
+
+      <li class="intro__item" style="background-image: url(images/content/2.jpg);">
+        <div class="container">
+          <div class="intro__content">
+            <div class="title intro__title">
+              <p>Final Offer</p>
+            </div>
+            <div class="intro__text">
+              <p>Up to <span>50%</span> sale for all furniture items!</p>
+            </div>
+            <a class="btn btn--white" href="#">Shop Now</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="intro__item" style="background-image: url(images/content/3.jpg);">
+        <div class="container">
+          <div class="intro__content">
+            <div class="title intro__title">
+              <p>Final Offer</p>
+            </div>
+            <div class="intro__text">
+              <p>Up to <span>50%</span> sale for all furniture items!</p>
+            </div>
+            <a class="btn btn--white" href="#">Shop Now</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="intro__item" style="background-image: url(images/content/4.jpg);">
+        <div class="container">
+          <div class="intro__content d-flex">
+            <div class="title intro__title">
+              <p>Final Offer</p>
+            </div>
+            <div class="intro__text">
+              <p>Up to <span>50%</span> sale for all furniture items!</p>
+            </div>
+            <a class="btn btn--white" href="#">Shop Now</a>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+
+  <div class="commitments">
+  <div class="container">
+    <ul class="commitments__inner d-flex jc-sb">
+      <li class="commitments__item commitments__item--warranty">Two years warranty</li>
+      <li class="commitments__item commitments__item--van">Free shipping</li>
+      <li class="commitments__item commitments__item--return">Return policy in 30 days</li>
+    </ul>
+  </div>
+</div>
+
+</section>
+  <section class="sale">
+  <div class="container">
+    <ul class="sale__inner d-flex jc-sb">
+      <li class="sale__col">
+        <div class="sale__big d-flex ai-c" style="background-image: url(images/products/sale/1.jpg);">
+          <div class="unit">
+            <div class="unit__title">Phones Sale</div>
+            <p class="unit__text"> Up to <span>30%</span> sale for all phones!</p>
+            <a class="btn btn--white" href="#">Shop Now</a>
+          </div>
+        </div>
+      </li>
+      <li class="sale__col">
+        <div class="sale__small d-flex ai-c" style="background-image: url(images/products/sale/2.jpg);">
+          <div class="unit">
+            <div class="unit__title">Electronics Sale</div>
+            <p class="unit__text"> Up to <span>70%</span> sale for all electronics!</p>
+            <a class="btn btn--white" href="#">Shop Now</a>
+          </div>
+        </div>
+        <div class="sale__small d-flex ai-c" style="background-image: url(images/products/sale/3.jpg);">
+          <div class="unit">
+            <div class="unit__title">Furniture Offer</div>
+            <p class="unit__text">Up to <span>50%</span> sale for all furniture items!</p>
+            <a class="btn btn--white" href="#">Shop Now</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+  <section class="new">
+  <div class="container">
+    <h2 class="title title--main">
+      New Arrivals
+    </h2>
+    <ul class="new__slider d-flex jc-sa">
+      <li class="new__product">
+        <article class="product">
+  <div class="product__top">
+    <div class="product__new">New</div>
+    <img class="product__img" src="images/products/13.jpg" alt="product">
+    <div class="product__popup">
+      <ul class="product__list">
+        <li class="product__item">
+          <button class="product__link product__link--wish" type="button">Add to Wish List</button>
+        </li>
+        <li class="product__item">
+          <button class="product__link product__link--compare" type="button">Compare</button>
+        </li>
+        <li class="product__item">
+          <button class="product__link product__link--cart" type="button">Add to Cart</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="product__bottom d-flex jc-sb">
+    <div class="product__desc">
+      <h3 class="product__name">Basic Crew Neck Tee</h3>
+      <p class="product__color">Black</p>
+    </div>
+    <p class="product__price"> <span>$</span>44.00</p>
+    <div class="product__content">
+      <div class="product__text">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eos perspiciatis iure ullam
+          exercitationem quasi nulla reprehenderit earum saepe? Id! Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. At, quis!</p>
+      </div>
+      <button class="product__btn btn btn--big">Add to Cart</button>
+    </div>
+  </div>
+
+</article>
+      </li>
+      <li class="new__product">
+        <article class="product">
+  <div class="product__top">
+    <div class="product__new">New</div>
+    <img class="product__img" src="images/products/15.jpg" alt="product">
+    <div class="product__popup">
+      <ul class="product__list">
+        <li class="product__item">
+          <button class="product__link product__link--wish" type="button">Add to Wish List</button>
+        </li>
+        <li class="product__item">
+          <button class="product__link product__link--compare" type="button">Compare</button>
+        </li>
+        <li class="product__item">
+          <button class="product__link product__link--cart" type="button">Add to Cart</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="product__bottom d-flex jc-sb">
+    <div class="product__desc">
+      <h3 class="product__name">Basic Crew Neck Tee</h3>
+      <p class="product__color">Black</p>
+    </div>
+    <p class="product__price"> <span>$</span>44.00</p>
+    <div class="product__content">
+      <div class="product__text">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eos perspiciatis iure ullam
+          exercitationem quasi nulla reprehenderit earum saepe? Id! Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. At, quis!</p>
+      </div>
+      <button class="product__btn btn btn--big">Add to Cart</button>
+    </div>
+  </div>
+
+</article>
+
+      </li>
+      <li class="new__product">
+        <article class="product">
+  <div class="product__top">
+    <div class="product__new">New</div>
+    <img class="product__img" src="images/products/3.jpg" alt="product">
+    <div class="product__popup">
+      <ul class="product__list">
+        <li class="product__item">
+          <button class="product__link product__link--wish" type="button">Add to Wish List</button>
+        </li>
+        <li class="product__item">
+          <button class="product__link product__link--compare" type="button">Compare</button>
+        </li>
+        <li class="product__item">
+          <button class="product__link product__link--cart" type="button">Add to Cart</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="product__bottom d-flex jc-sb">
+    <div class="product__desc">
+      <h3 class="product__name">Basic Crew Neck Tee</h3>
+      <p class="product__color">Black</p>
+    </div>
+    <p class="product__price"> <span>$</span>44.00</p>
+    <div class="product__content">
+      <div class="product__text">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eos perspiciatis iure ullam
+          exercitationem quasi nulla reprehenderit earum saepe? Id! Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. At, quis!</p>
+      </div>
+      <button class="product__btn btn btn--big">Add to Cart</button>
+    </div>
+  </div>
+
+</article>
+
+      </li>
+      <li class="new__product">
+        <article class="product">
+  <div class="product__top">
+    <div class="product__new">New</div>
+    <img class="product__img" src="images/products/4.jpg" alt="product">
+    <div class="product__popup">
+      <ul class="product__list">
+        <li class="product__item">
+          <button class="product__link product__link--wish" type="button">Add to Wish List</button>
+        </li>
+        <li class="product__item">
+          <button class="product__link product__link--compare" type="button">Compare</button>
+        </li>
+        <li class="product__item">
+          <button class="product__link product__link--cart" type="button">Add to Cart</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="product__bottom d-flex jc-sb">
+    <div class="product__desc">
+      <h3 class="product__name">Basic Crew Neck Tee</h3>
+      <p class="product__color">Black</p>
+    </div>
+    <p class="product__price"> <span>$</span>44.00</p>
+    <div class="product__content">
+      <div class="product__text">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eos perspiciatis iure ullam
+          exercitationem quasi nulla reprehenderit earum saepe? Id! Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. At, quis!</p>
+      </div>
+      <button class="product__btn btn btn--big">Add to Cart</button>
+    </div>
+  </div>
+
+</article>
+
+      </li>
+      <li class="new__product">
+        <article class="product">
+  <div class="product__top">
+    <div class="product__new">New</div>
+    <img class="product__img" src="images/products/5.jpg" alt="product">
+    <div class="product__popup">
+      <ul class="product__list">
+        <li class="product__item">
+          <button class="product__link product__link--wish" type="button">Add to Wish List</button>
+        </li>
+        <li class="product__item">
+          <button class="product__link product__link--compare" type="button">Compare</button>
+        </li>
+        <li class="product__item">
+          <button class="product__link product__link--cart" type="button">Add to Cart</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="product__bottom d-flex jc-sb">
+    <div class="product__desc">
+      <h3 class="product__name">Basic Crew Neck Tee</h3>
+      <p class="product__color">Black</p>
+    </div>
+    <p class="product__price"> <span>$</span>44.00</p>
+    <div class="product__content">
+      <div class="product__text">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eos perspiciatis iure ullam
+          exercitationem quasi nulla reprehenderit earum saepe? Id! Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. At, quis!</p>
+      </div>
+      <button class="product__btn btn btn--big">Add to Cart</button>
+    </div>
+  </div>
+
+</article>
+
+      </li>
+      <li class="new__product">
+        <article class="product">
+  <div class="product__top">
+    <div class="product__new">New</div>
+    <img class="product__img" src="images/products/16.jpg" alt="product">
+    <div class="product__popup">
+      <ul class="product__list">
+        <li class="product__item">
+          <button class="product__link product__link--wish" type="button">Add to Wish List</button>
+        </li>
+        <li class="product__item">
+          <button class="product__link product__link--compare" type="button">Compare</button>
+        </li>
+        <li class="product__item">
+          <button class="product__link product__link--cart" type="button">Add to Cart</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="product__bottom d-flex jc-sb">
+    <div class="product__desc">
+      <h3 class="product__name">Basic Crew Neck Tee</h3>
+      <p class="product__color">Black</p>
+    </div>
+    <p class="product__price"> <span>$</span>44.00</p>
+    <div class="product__content">
+      <div class="product__text">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eos perspiciatis iure ullam
+          exercitationem quasi nulla reprehenderit earum saepe? Id! Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. At, quis!</p>
+      </div>
+      <button class="product__btn btn btn--big">Add to Cart</button>
+    </div>
+  </div>
+
+</article>
+      </li>
+
+    </ul>
+  </div>
+</section>
+  <section class="best">
+  <div class="container">
+    <h2 class="title title--main">Our Bestsellers</h2>
+    <ul class="best__list d-flex fw-w jc-c">
+      <li class="best__product">
+        <article class="product">
+  <div class="product__top">
+    <div class="product__new">New</div>
+    <img class="product__img" src="images/products/6.jpg" alt="product">
+    <div class="product__popup">
+      <ul class="product__list">
+        <li class="product__item">
+          <button class="product__link product__link--wish" type="button">Add to Wish List</button>
+        </li>
+        <li class="product__item">
+          <button class="product__link product__link--compare" type="button">Compare</button>
+        </li>
+        <li class="product__item">
+          <button class="product__link product__link--cart" type="button">Add to Cart</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="product__bottom d-flex jc-sb">
+    <div class="product__desc">
+      <h3 class="product__name">Basic Crew Neck Tee</h3>
+      <p class="product__color">Black</p>
+    </div>
+    <p class="product__price"> <span>$</span>44.00</p>
+    <div class="product__content">
+      <div class="product__text">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eos perspiciatis iure ullam
+          exercitationem quasi nulla reprehenderit earum saepe? Id! Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. At, quis!</p>
+      </div>
+      <button class="product__btn btn btn--big">Add to Cart</button>
+    </div>
+  </div>
+
+</article>
+      </li>
+
+      <li class="best__product">
+        <article class="product">
+  <div class="product__top">
+    <div class="product__new">New</div>
+    <img class="product__img" src="images/products/7.jpg" alt="product">
+    <div class="product__popup">
+      <ul class="product__list">
+        <li class="product__item">
+          <button class="product__link product__link--wish" type="button">Add to Wish List</button>
+        </li>
+        <li class="product__item">
+          <button class="product__link product__link--compare" type="button">Compare</button>
+        </li>
+        <li class="product__item">
+          <button class="product__link product__link--cart" type="button">Add to Cart</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="product__bottom d-flex jc-sb">
+    <div class="product__desc">
+      <h3 class="product__name">Basic Crew Neck Tee</h3>
+      <p class="product__color">Black</p>
+    </div>
+    <p class="product__price"> <span>$</span>44.00</p>
+    <div class="product__content">
+      <div class="product__text">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eos perspiciatis iure ullam
+          exercitationem quasi nulla reprehenderit earum saepe? Id! Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. At, quis!</p>
+      </div>
+      <button class="product__btn btn btn--big">Add to Cart</button>
+    </div>
+  </div>
+
+</article>
+
+      </li>
+      <li class="best__product">
+        <article class="product">
+  <div class="product__top">
+    <div class="product__new">New</div>
+    <img class="product__img" src="images/products/8.jpg" alt="product">
+    <div class="product__popup">
+      <ul class="product__list">
+        <li class="product__item">
+          <button class="product__link product__link--wish" type="button">Add to Wish List</button>
+        </li>
+        <li class="product__item">
+          <button class="product__link product__link--compare" type="button">Compare</button>
+        </li>
+        <li class="product__item">
+          <button class="product__link product__link--cart" type="button">Add to Cart</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="product__bottom d-flex jc-sb">
+    <div class="product__desc">
+      <h3 class="product__name">Basic Crew Neck Tee</h3>
+      <p class="product__color">Black</p>
+    </div>
+    <p class="product__price"> <span>$</span>44.00</p>
+    <div class="product__content">
+      <div class="product__text">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eos perspiciatis iure ullam
+          exercitationem quasi nulla reprehenderit earum saepe? Id! Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. At, quis!</p>
+      </div>
+      <button class="product__btn btn btn--big">Add to Cart</button>
+    </div>
+  </div>
+
+</article>
+
+      </li>
+      <li class="best__product">
+        <article class="product">
+  <div class="product__top">
+    <div class="product__new">New</div>
+    <img class="product__img" src="images/products/9.jpg" alt="product">
+    <div class="product__popup">
+      <ul class="product__list">
+        <li class="product__item">
+          <button class="product__link product__link--wish" type="button">Add to Wish List</button>
+        </li>
+        <li class="product__item">
+          <button class="product__link product__link--compare" type="button">Compare</button>
+        </li>
+        <li class="product__item">
+          <button class="product__link product__link--cart" type="button">Add to Cart</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="product__bottom d-flex jc-sb">
+    <div class="product__desc">
+      <h3 class="product__name">Basic Crew Neck Tee</h3>
+      <p class="product__color">Black</p>
+    </div>
+    <p class="product__price"> <span>$</span>44.00</p>
+    <div class="product__content">
+      <div class="product__text">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eos perspiciatis iure ullam
+          exercitationem quasi nulla reprehenderit earum saepe? Id! Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. At, quis!</p>
+      </div>
+      <button class="product__btn btn btn--big">Add to Cart</button>
+    </div>
+  </div>
+
+</article>
+
+      </li>
+
+    </ul>
+  </div>
+</section>
+  <div class="best-seller" style="background-image: url('images/products/11.jpg')">
+  <div class="container">
+    <div class="best-seller__content">
+      <h2 class="title best-seller__name ">Phone of the year</h2>
+      <div class="best-seller__desc">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry orem
+          Ipsum..
+        </p>
+      </div>
+      <a class="btn btn--white" href="#">Shop Now</a>
+    </div>
+  </div>
+</div>
+  <section class="special">
+  <div class="container">
+    <h2 class="title title--main">Special Offers</h2>
+    <ul class="special__list d-flex">
+      <li class="special__product">
+        <article class="product">
+  <div class="product__top">
+    <div class="product__new">New</div>
+    <img class="product__img" src="images/products/12.jpg" alt="product">
+    <div class="product__popup">
+      <ul class="product__list">
+        <li class="product__item">
+          <button class="product__link product__link--wish" type="button">Add to Wish List</button>
+        </li>
+        <li class="product__item">
+          <button class="product__link product__link--compare" type="button">Compare</button>
+        </li>
+        <li class="product__item">
+          <button class="product__link product__link--cart" type="button">Add to Cart</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="product__bottom d-flex jc-sb">
+    <div class="product__desc">
+      <h3 class="product__name">Basic Crew Neck Tee</h3>
+      <p class="product__color">Black</p>
+    </div>
+    <p class="product__price"> <span>$</span>44.00</p>
+    <div class="product__content">
+      <div class="product__text">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eos perspiciatis iure ullam
+          exercitationem quasi nulla reprehenderit earum saepe? Id! Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. At, quis!</p>
+      </div>
+      <button class="product__btn btn btn--big">Add to Cart</button>
+    </div>
+  </div>
+
+</article>
+
+      </li>
+      <li class="special__product">
+        <article class="product">
+  <div class="product__top">
+    <div class="product__new">New</div>
+    <img class="product__img" src="images/products/13.jpg" alt="product">
+    <div class="product__popup">
+      <ul class="product__list">
+        <li class="product__item">
+          <button class="product__link product__link--wish" type="button">Add to Wish List</button>
+        </li>
+        <li class="product__item">
+          <button class="product__link product__link--compare" type="button">Compare</button>
+        </li>
+        <li class="product__item">
+          <button class="product__link product__link--cart" type="button">Add to Cart</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="product__bottom d-flex jc-sb">
+    <div class="product__desc">
+      <h3 class="product__name">Basic Crew Neck Tee</h3>
+      <p class="product__color">Black</p>
+    </div>
+    <p class="product__price"> <span>$</span>44.00</p>
+    <div class="product__content">
+      <div class="product__text">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eos perspiciatis iure ullam
+          exercitationem quasi nulla reprehenderit earum saepe? Id! Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. At, quis!</p>
+      </div>
+      <button class="product__btn btn btn--big">Add to Cart</button>
+    </div>
+  </div>
+
+</article>
+      </li>
+      <li class="special__product">
+        <article class="product">
+  <div class="product__top">
+    <div class="product__new">New</div>
+    <img class="product__img" src="images/products/14.jpg" alt="product">
+    <div class="product__popup">
+      <ul class="product__list">
+        <li class="product__item">
+          <button class="product__link product__link--wish" type="button">Add to Wish List</button>
+        </li>
+        <li class="product__item">
+          <button class="product__link product__link--compare" type="button">Compare</button>
+        </li>
+        <li class="product__item">
+          <button class="product__link product__link--cart" type="button">Add to Cart</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="product__bottom d-flex jc-sb">
+    <div class="product__desc">
+      <h3 class="product__name">Basic Crew Neck Tee</h3>
+      <p class="product__color">Black</p>
+    </div>
+    <p class="product__price"> <span>$</span>44.00</p>
+    <div class="product__content">
+      <div class="product__text">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eos perspiciatis iure ullam
+          exercitationem quasi nulla reprehenderit earum saepe? Id! Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. At, quis!</p>
+      </div>
+      <button class="product__btn btn btn--big">Add to Cart</button>
+    </div>
+  </div>
+
+</article>
+      </li>
+      <li class="special__product">
+        <article class="product">
+  <div class="product__top">
+    <div class="product__new">New</div>
+    <img class="product__img" src="images/products/15.jpg" alt="product">
+    <div class="product__popup">
+      <ul class="product__list">
+        <li class="product__item">
+          <button class="product__link product__link--wish" type="button">Add to Wish List</button>
+        </li>
+        <li class="product__item">
+          <button class="product__link product__link--compare" type="button">Compare</button>
+        </li>
+        <li class="product__item">
+          <button class="product__link product__link--cart" type="button">Add to Cart</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="product__bottom d-flex jc-sb">
+    <div class="product__desc">
+      <h3 class="product__name">Basic Crew Neck Tee</h3>
+      <p class="product__color">Black</p>
+    </div>
+    <p class="product__price"> <span>$</span>44.00</p>
+    <div class="product__content">
+      <div class="product__text">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eos perspiciatis iure ullam
+          exercitationem quasi nulla reprehenderit earum saepe? Id! Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. At, quis!</p>
+      </div>
+      <button class="product__btn btn btn--big">Add to Cart</button>
+    </div>
+  </div>
+
+</article>
+      </li>
+    </ul>
+  </div>
+</section>
+  <section class="brands">
+  <div class="container">
+    <h2 class="title title--main">Brands We Love</h2>
+    <div class="brands__desc">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore
+        tempor sed do magna aliqua.</p>
+    </div>
+    <ul class="brands__list d-flex fw-w">
+      <li class="brands__item">
+        <img class="brands__img" src="images/brands/1.jpg" alt="brands image">
+      </li>
+      <li class="brands__item">
+        <img class="brands__img" src="images/brands/2.jpg" alt="brands image">
+      </li>
+      <li class="brands__item">
+        <img class="brands__img" src="images/brands/3.jpg" alt="brands image">
+      </li>
+      <li class="brands__item">
+        <img class="brands__img" src="images/brands/4.jpg" alt="brands image">
+      </li>
+      <li class="brands__item">
+        <img class="brands__img" src="images/brands/5.jpg" alt="brands image">
+      </li>
+    </ul>
+  </div>
+</section>
+  <section class="journal">
+  <div class="container">
+    <h2 class="title title--main">Journal</h2>
+
+    <ul class="journal__list d-flex fw-w">
+      <li class="journal__item journal__item--main">
+        <article class="article">
+  <a class="article__link" href="#">
+    <div class="article__image-box">
+      <img class="article__img" src="images/journal/1.jpg" alt="article image">
+    </div>
+    <p class="article__category">Category</p>
+    <h2 class="article__heading">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    </h2>
+    <div class="article__desc">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et
+        dolore magna aliqua.
+      </p>
+    </div>
+  </a>
+</article>
+
+      </li>
+
+      <li class="journal__item journal__item--main">
+        <article class="article">
+  <a class="article__link" href="#">
+    <div class="article__image-box">
+      <img class="article__img" src="images/journal/2.jpg" alt="article image">
+    </div>
+    <p class="article__category">Category</p>
+    <h2 class="article__heading">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    </h2>
+    <div class="article__desc">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et
+        dolore magna aliqua.
+      </p>
+    </div>
+  </a>
+</article>
+      </li>
+
+      <li class="journal__item journal__item--main">
+        <article class="article">
+  <a class="article__link" href="#">
+    <div class="article__image-box">
+      <img class="article__img" src="images/journal/3.jpg" alt="article image">
+    </div>
+    <p class="article__category">Category</p>
+    <h2 class="article__heading">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    </h2>
+    <div class="article__desc">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et
+        dolore magna aliqua.
+      </p>
+    </div>
+  </a>
+</article>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <ul class="footer__list d-flex jc-sb">
+        <li class="footer__item">
+          <p class="footer__heading">menu</p>
+          <ul class="category">
+            <li class="category__item">
+              <a href="#" class="category__link">
+                Home
+              </a>
+            </li>
+            <li class="category__item">
+              <a href="#" class="category__link">
+                Shop
+              </a>
+            </li>
+            <li class="category__item">
+              <a href="#" class="category__link">
+                About
+              </a>
+            </li>
+            <li class="category__item">
+              <a href="#" class="category__link">
+                Contact
+              </a>
+            </li>
+            <li class="category__item">
+              <a href="#" class="category__link">
+                Journal
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="footer__item">
+          <p class="footer__heading">SHOP</p>
+          <ul class="category">
+            <li class="category__item">
+              <a href="#" class="category__link">
+                Category 1
+              </a>
+            </li>
+            <li class="category__item">
+              <a href="#" class="category__link">
+                Category 2
+              </a>
+            </li>
+            <li class="category__item">
+              <a href="#" class="category__link">
+                Category 3
+              </a>
+            </li>
+            <li class="category__item">
+              <a href="#" class="category__link">
+                Category 4
+              </a>
+            </li>
+            <li class="category__item">
+              <a href="#" class="category__link">
+                Category 5
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="footer__item">
+          <p class="footer__heading">HELP</p>
+          <ul class="category">
+            <li class="category__item">
+              <a href="#" class="category__link">
+                Privacy Policy
+              </a>
+            </li>
+            <li class="category__item">
+              <a href="#" class="category__link">
+                Terms & Conditions
+              </a>
+            </li>
+            <li class="category__item">
+              <a href="#" class="category__link">
+                Special E-shop
+              </a>
+            </li>
+            <li class="category__item">
+              <a href="#" class="category__link">
+                Shipping
+              </a>
+            </li>
+            <li class="category__item">
+              <a href="#" class="category__link">
+                Secure Payments
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <address class="contacts">
+        <a href="tel:+0526115711" class="contacts__link">(052) 611-5711</a>
+        <a href="mailto:company@domain.com" class="contacts__link">company@domain.com</a>
+        <p class="contacts__address">575 Crescent Ave. Quakertown, PA 18951</p>
+      </address>
+      <a href="#" class="logo footer__logo">
+        <img src="images/logo.svg" alt="logo of the website">
+      </a>
+    </div>
+    <div class="footer__bottom d-flex jc-sb ai-c">
+      <ul class="social d-flex ai-c">
+        <li class="social__item">
+          <a href="" class="social__link">
+            <span class="sr-only">Facebook</span>
+            <svg class="social__svg">
+              <use xlink:href="sprite.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link">
+            <span class="sr-only">Linkedin</span>
+            <svg class="social__svg">
+              <use xlink:href="sprite.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link">
+            <span class="sr-only">Instagram</span>
+            <svg class="social__svg">
+              <use xlink:href="sprite.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <p class="footer__copy">2020 Orebi Minimal eCommerce Sketch Template by Adveits</p>
+    </div>
+  </div>
+</footer>
+
+
+<script src="js/main.min.js"></script>
+</body>
+
+</html>
