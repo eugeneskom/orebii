@@ -22,7 +22,7 @@ $(function () {
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
-      // autoplay: true,
+      autoplay: true,
     });
 
     let $dots = document.querySelectorAll('.intro__list .slick-dots li');
@@ -156,9 +156,12 @@ $(function () {
 
   $('.button-list').on('click', function () {
     $('.product').addClass('product--list');
+    $('.shop-products').addClass('shop-products--list');
   });
   $('.button-grid').on('click', function () {
     $('.product').removeClass('product--list');
+    $('.shop-products').removeClass('shop-products--list');
+
   });
 
 
